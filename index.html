@@ -29,6 +29,12 @@
         .bg-nav-pill {
             background-color: #12302e;
         }
+        .text-coral {
+            color: #EC6842;
+        }
+        .bg-coral {
+            background-color: #EC6842;
+        }
         /* Custom thin font weight for the dash */
         .font-hairline {
             font-weight: 100;
@@ -41,12 +47,13 @@
     <img src="https://placehold.co/1920x1080/012220/012220" alt="Background Texture" class="absolute inset-0 w-full h-full object-cover -z-10 opacity-50 pointer-events-none">
 
     <!-- Top Navigation -->
-    <header class="w-full px-8 py-6 border-b border-white/10 flex justify-between items-center z-20">
+    <header class="w-full px-8 py-6 border-b border-white/10 flex justify-between items-center z-20 relative">
+        <div class="absolute inset-0 border-b-2 border-coral/30 pointer-events-none"></div>
         <div class="text-sm font-medium tracking-wide opacity-90">
             Digital Architects & Ecosystem Strategists
         </div>
         
-        <div class="text-xl font-medium tracking-tight absolute left-1/2 transform -translate-x-1/2">
+        <div class="text-xl font-medium tracking-tight absolute left-1/2 transform -translate-x-1/2 text-coral">
             helllicht
         </div>
         
@@ -67,8 +74,8 @@
             <!-- Line 1: Mixed Serif & Italic -->
             <h1 class="text-5xl md:text-7xl lg:text-[7.5rem] leading-[0.9] text-pale-green whitespace-nowrap">
                 <span class="font-serif-display font-normal">Digital</span>
-                <span class="font-serif-display italic font-normal ml-2 md:ml-4">Relevance</span>
-                <span class="font-hairline mx-2 md:mx-6 opacity-80">—</span>
+                <span class="font-serif-display italic font-normal ml-2 md:ml-4 text-coral">Relevance</span>
+                <span class="font-hairline mx-2 md:mx-6 opacity-80 text-coral">—</span>
                 <span class="font-serif-display italic font-normal">Ecosystems</span>
             </h1>
             
@@ -82,7 +89,7 @@
         
         <!-- Left Floating Text -->
         <div class="absolute left-[15%] top-[65%] hidden lg:block">
-            <span class="text-[10px] font-bold tracking-[0.2em] uppercase opacity-90">(Case Studies)</span>
+            <span class="text-[10px] font-bold tracking-[0.2em] uppercase opacity-90 text-coral">(Case Studies)</span>
         </div>
 
         <!-- Right Floating Text -->
@@ -104,7 +111,7 @@
     <footer class="absolute bottom-8 left-0 w-full px-8 flex justify-between items-end z-20">
         
         <!-- Left: Inquiry Button -->
-        <button class="bg-pale-green text-dark-green px-6 py-3 rounded-full flex items-center gap-2 text-xs font-bold tracking-wide hover:bg-white transition-colors group">
+        <button class="bg-coral text-white px-6 py-3 rounded-full flex items-center gap-2 text-xs font-bold tracking-wide hover:bg-[#d55a38] transition-colors group">
             START TRANSFORMATION
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">
                 <line x1="7" y1="17" x2="17" y2="7"></line>
@@ -114,7 +121,7 @@
 
         <!-- Center: Navigation Pills -->
         <nav class="bg-nav-pill p-1.5 rounded-full flex gap-1 absolute left-1/2 transform -translate-x-1/2 shadow-lg">
-            <a href="#" class="bg-pale-green text-dark-green px-6 py-2.5 rounded-full text-xs font-bold tracking-wide">
+            <a href="#" class="bg-coral text-white px-6 py-2.5 rounded-full text-xs font-bold tracking-wide">
                 HOME
             </a>
             <a href="#" class="text-pale-green px-6 py-2.5 rounded-full text-xs font-bold tracking-wide hover:bg-white/5 transition-colors">
@@ -133,13 +140,13 @@
             <!-- Cookie Banner -->
             <div class="flex items-center gap-4 bg-transparent">
                 <span class="text-sm font-medium opacity-90 hidden md:inline">This website uses cookies</span>
-                <button class="bg-white text-dark-green px-5 py-2 rounded-full text-xs font-bold hover:bg-gray-200 transition-colors">
+                <button class="bg-coral text-white px-5 py-2 rounded-full text-xs font-bold hover:bg-[#d55a38] transition-colors">
                     Accept
                 </button>
             </div>
 
             <!-- Scroll Down Button -->
-            <button class="bg-pale-green text-dark-green w-12 h-12 rounded-full flex items-center justify-center hover:bg-white transition-colors hover:scale-105 transform duration-200">
+            <button class="bg-coral text-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-[#d55a38] transition-colors hover:scale-105 transform duration-200">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <line x1="12" y1="5" x2="12" y2="19"></line>
                     <polyline points="19 12 12 19 5 12"></polyline>
